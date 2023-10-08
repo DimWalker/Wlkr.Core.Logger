@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - master # 修改为你的主分支名
-    paths:
-      - 'Directory.Build.props'
+    paths: # 监听文件，有变动才触发action
+      - 'Directory.Build.props' 
 
 jobs:
   build-and-publish:
