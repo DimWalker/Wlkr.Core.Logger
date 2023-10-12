@@ -1,12 +1,17 @@
-name: Publish NuGet Package
+name: Publish NuGet Package # Action名称
 
+# 设置触发器
+# 以下示例为master分支，Directory.Build.props文件发生变动后，
+# 触发本action
 on:
   push:
     branches:
-      - master # 修改为你的主分支名
-    paths: # 监听文件，有变动才触发action
+      - master # 监听的分支
+    paths: # 监听的文件
       - 'Directory.Build.props' 
 
+# 设置运行环境及执行步骤
+# 作用见step name
 jobs:
   build-and-publish:
     runs-on: windows-latest
@@ -29,7 +34,8 @@ jobs:
       - name: Pack NuGet package
         run: |
           cd Wlkr.Core.Logger
-          dotnet pack Wlkr.Core.Logger.csproj  --configuration Release --no-build          
-
+          dotnet pack Wlkr.Core.Logger.csproj  --configuration Release --no-build      
+          
+      # 需在github库中设置${{ secrets.NUGET_API_KEY }}
       - name: Publish NuGet package
         run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
