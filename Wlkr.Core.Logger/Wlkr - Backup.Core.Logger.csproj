@@ -6,9 +6,6 @@
 		<LangVersion>10.0</LangVersion>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Description>GitOps - Git To Nuget示例</Description>
-		<RepositoryUrl>https://github.com/DimWalker/Wlkr.Core.Logger</RepositoryUrl>
-		<PackageProjectUrl>https://github.com/DimWalker/Wlkr.Core.Logger</PackageProjectUrl>
 	</PropertyGroup>
 	<ItemGroup>
 	  <None Include="..\README.md">
