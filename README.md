@@ -1,4 +1,4 @@
-[![DimTechStudio.Com](vx_images/DimTechStudio-Logo.png)](https://www.dimtechstudio.com/)
+[![DimTechStudio.Com](https://raw.githubusercontent.com/DimWalker/Wlkr.Core.Logger/master/vx_images/DimTechStudio-Logo.png)](https://www.dimtechstudio.com/)
 
 # 使用Github Action实现构建、发布到 nuget.org
 GitHub Actions是GitHub提供的持续集成和持续部署（CI/CD）工具，它能够自动化构建、测试和部署你的项目。在这篇教程中，我们将探讨如何使用GitHub Actions来构建一个.NET项目，并将它发布到 NuGet.org。
