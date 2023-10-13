@@ -129,32 +129,32 @@ jobs:
     * 工具下载地址1：[VNoteTools Github](https://github.com/DimWalker/VNoteTools)  
     * 工具下载地址2：[VNoteTools Gitee](https://gitee.com/dimwalker/VNoteTools/)  
     * 将下面代码的github_image_prefix_url，替换为你的代码库，执行命令将README.md转换为README_Nuget.md  
-```shell
-VNoteTools.exe -Method NugetMd -InputMdPath "F:\Project_Private\Wlkr.Core.SDK\Wlkr.Core.Logger\README.md" -github_image_prefix_url "https://raw.githubusercontent.com/DimWalker/Wlkr.Core.Logger/master/vx_images/"
-```
+    ```shell  
+    VNoteTools.exe -Method NugetMd -InputMdPath "F:\Project_Private\Wlkr.Core.SDK\Wlkr.Core.Logger\README.md" -github_image_prefix_url "https://raw.githubusercontent.com/DimWalker/Wlkr.Core.Logger/master/vx_images/"  
+    ```  
     * 修改Directory.Build.props，将整个solution内的项目统一README_Nuget.md  
-```xml
-	<PropertyGroup>
-		<!-- 设置 SolutionDir 属性为解决方案文件的绝对路径 -->
-		<SolutionDir>$(MSBuildThisFileDirectory)</SolutionDir>
-	</PropertyGroup>
-	<ItemGroup>
-		<!-- Nuget的Icon文件 -->
-		<None Include="$(SolutionDir)vx_images\DimTechStudio-Icon.png">
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
-		<!-- Nuget的自述文件 -->
-		<None Include="$(SolutionDir)README_Nuget.md">
-			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
-		</None>
-	</ItemGroup>
-	<PropertyGroup>
-		<PackageIcon>DimTechStudio-Icon.png</PackageIcon>
-		<PackageReadmeFile>README_Nuget.md</PackageReadmeFile>
-	</PropertyGroup>
-```
+    ```xml  
+	    <PropertyGroup>  
+		    <!-- 设置 SolutionDir 属性为解决方案文件的绝对路径 -->  
+		    <SolutionDir>$(MSBuildThisFileDirectory)</SolutionDir>  
+	    </PropertyGroup>  
+	    <ItemGroup>  
+		    <!-- Nuget的Icon文件 -->  
+		    <None Include="$(SolutionDir)vx_images\DimTechStudio-Icon.png">  
+			    <Pack>True</Pack>  
+			    <PackagePath>\</PackagePath>  
+		    </None>  
+		    <!-- Nuget的自述文件 -->  
+		    <None Include="$(SolutionDir)README_Nuget.md">  
+			    <Pack>True</Pack>  
+			    <PackagePath>\</PackagePath>  
+		    </None>  
+	    </ItemGroup>  
+	    <PropertyGroup>  
+		    <PackageIcon>DimTechStudio-Icon.png</PackageIcon>  
+		    <PackageReadmeFile>README_Nuget.md</PackageReadmeFile>  
+	    </PropertyGroup>  
+    ```  
 
 ## Author Info  
 DimWalker  
