@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wlkr.Core.Logger", "Wlkr.Core.Logger\Wlkr.Core.Logger.csproj", "{F7DC8772-65BF-40D3-AC8C-7358D260D51D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wlkr.Core.Logger", "Wlkr.Core.Logger\Wlkr.Core.Logger.csproj", "{F7DC8772-65BF-40D3-AC8C-7358D260D51D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wlkr.Core.Logger.Test", "Wlkr.Core.Logger.Test\Wlkr.Core.Logger.Test.csproj", "{1636FF35-0665-49DB-A740-D3D044036FA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F7DC8772-65BF-40D3-AC8C-7358D260D51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7DC8772-65BF-40D3-AC8C-7358D260D51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7DC8772-65BF-40D3-AC8C-7358D260D51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1636FF35-0665-49DB-A740-D3D044036FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1636FF35-0665-49DB-A740-D3D044036FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1636FF35-0665-49DB-A740-D3D044036FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1636FF35-0665-49DB-A740-D3D044036FA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

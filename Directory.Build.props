@@ -10,7 +10,7 @@
 		<MajorVersion>1</MajorVersion>
 		<MinorVersion>0</MinorVersion>
 		<BuildDate>2310</BuildDate>
-		<RevisionTime>1201</RevisionTime>
+		<RevisionTime>1300</RevisionTime>
 		<!--<MinorVersion>$([System.DateTime]::Now.ToString("yy"))</MinorVersion>-->
 		<!--<BuildDate>$([System.DateTime]::Now.ToString("MMdd"))</BuildDate>-->
 		<!--<RevisionTime>$([System.DateTime]::Now.ToString("HHmm"))</RevisionTime>-->
@@ -33,13 +33,13 @@
 			<PackagePath>\</PackagePath>
 		</None>
 		<!-- Nuget的自述文件 -->
-		<None Include="$(SolutionDir)README.md">
+		<None Include="$(SolutionDir)README_Nuget.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
 	<PropertyGroup>
 		<PackageIcon>DimTechStudio-Icon.png</PackageIcon>
-		<!--<PackageReadmeFile>README.md</PackageReadmeFile>-->
+		<PackageReadmeFile>README_Nuget.md</PackageReadmeFile>
 	</PropertyGroup>
 </Project>

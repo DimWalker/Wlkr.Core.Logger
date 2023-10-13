@@ -4,18 +4,11 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<LangVersion>10.0</LangVersion>
-		<ImplicitUsings>disable</ImplicitUsings>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<Description>GitOps - Git To Nuget示例</Description>
+		<ImplicitUsings>disable</ImplicitUsings>		
+		<Description>GitOps - Github To Nuget示例</Description>
 		<RepositoryUrl>https://github.com/DimWalker/Wlkr.Core.Logger</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/DimWalker/Wlkr.Core.Logger</PackageProjectUrl>
 	</PropertyGroup>
-	<ItemGroup>
-	  <None Include="..\README.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="log4net" Version="2.0.15" />
 	</ItemGroup>
